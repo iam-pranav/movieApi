@@ -7,7 +7,7 @@ $(document).ready( () =>{
 		e.preventDefault()
 
 		let searchItem	=	$('#item').val()
-		console.log(searchItem)
+		
 		if ( searchItem == '' || searchItem	==	null || searchItem == undefined ) {
 
 			// alert("enter valid entry")
@@ -37,7 +37,7 @@ const callCrawl	=	( param ) => {
 		type: 'GET',
 		datatype: 'json',
 		async: true,
-		url:'http://www.omdbapi.com/?apikey=df308db8&t='+param,
+		url:'https://www.omdbapi.com/?apikey=df308db8&t='+param,
 
 		success: (response) =>{
 
