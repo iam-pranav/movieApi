@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOVIE SEARCH ENGINE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		
+
+
+		<div class="row justify-content-center mt-0">
+			<h1 class="display-4 text-center">Movie Search API</h1>
+		</div>
+
+		<section>
+			<div class="modal">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title">Alert Message</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Provide something to be searched.</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</section>
+		
+		<section>
+			<div id="navbarColor02">
+					<form class="form-inline my-2 my-lg-0 ml-lg-3 p-2">
+						<input id="item" class="form-control  col-md-9 col-sm-12" type="text" placeholder="Search By Name of Movie, Episodes, Seasons etc."> 					
+						<button id="searchbtn" class="btn btn-secondary my-2 ml-lg-3 ml-md-2 col-md-2 col-sm-12" type="submit">Search</button>
+					</form>					
+			</div>
+		</section>
+		
+		<section>
+			<div class="container">
+				<div class="row mx-auto">
+					<div class="alert alert-dismissible alert-warning text-center">
+					  <button type="button" class="close" data-dismiss="alert">&times;</button>
+					  <h4 class="alert-heading">Welcome to OMDB search API</h4>
+					  <p class="mb-0">Hi visitor, You can search anything from entertainment world here, so just type whatever is in your mind...</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="content">
+			<div class="container p-2">
+				<div class="row">
+					<div class="col-12 col-md-4 mx-auto">
+						<img id="poster" class="img img-responsive rounded" src="">
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="jumbotron">
+							<div class="d-flex flex-row justify-content-between">
+								<div>
+									<span>
+										<h1 id="title" class="display-4"></h1>
+										<p id="year"></p>
+									</span>
+									
+								</div>
+								<div class="d-flex flex-row">
+									<div class="d-flex">
+										<i class="fa fa-star fa-3x justify-content-end" style="color: yellow"></i>
+									</div>
+									<div class="d-flex flex-column">
+										<div class="d-flex">
+											<h3 id="rating" title=""></h3>
+											<small class="align-content-end">/10</small>
+										</div>
+										<div>
+											<small id="imdbVotes"></small>
+										</div>
+									</div>								
+								</div>							
+							</div>
+							<div class="d-flex flex-row justify-content-around">
+								<p id="rated"></p><hr>
+								<p id="runtime"></p><hr>
+								<p id="genre"></p><hr>
+								<p id="released"></p>
+							</div>
+							<hr style="background-color: white;">
+							<p id="plot" class="lead"></p>
+							<div class="d-flex flex-column">
+								<p id="writers"></p>
+								<p id="directors"></p>
+								<p id="actors"></p>
+								<p></p>
+							</div>
+							<hr style="background-color: white;">
+							<div class="d-flex flex-column">
+								<div class="d-flex flex-row justify-content-around">
+									<i class="fa fa-trophy fa-3x" style="color: pink"></i>
+									<p id="awards" class="align-self-end"></p>
+								</div>
+								<hr style="background-color: white;">
+								<div class="d-flex flex-row justify-content-around">
+									<p id="imdbid"></p>								
+									<p id="review"></p>
+									<p id="season"></p>
+									<p id="metascore"></p>
+								</div>
+							</div>					
+							<p class="lead">
+							
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<div class="row justify-content-center mb-0">
+			
+			<p class="text-center well">Copyright 2018</p>
+		</div>
+
+
+
+	</div>
+	
+
+
+
+	<!-- Bootstrip javascript files -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

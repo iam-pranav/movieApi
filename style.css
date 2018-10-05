@@ -1,0 +1,50 @@
+
+:root {
+	font-size: 16px;
+}
+
+header {
+	background-color: black;
+	color: white;
+}
+
+
+hr{
+	background-color: white;
+}
+
+#actors b, #directors b, #writers b {
+	letter-spacing: 1px;
+}
+#actors b, #directors b, #writers b:hover {
+
+	cursor: pointer;
+}
+
+#imdbid:hover, #released:hover, #review:hover, #season:hover, #metascore:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: pink;
+	/*font-size: 1.5rem;*/
+	text-transform: 2s;
+}
+
+
+@media screen and (max-width: 500px) {
+
+	div.jumbotron > div:nth-child(1) {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	:root {
+		font-size: .5rem;
+	}
+}
+
+@media screen and (max-width: 600px)  {
+	#poster {
+		width: 80vw;
+		text-align: center;
+	}
+}
