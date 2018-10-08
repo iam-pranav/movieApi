@@ -37,7 +37,7 @@ const callCrawl	=	( param ) => {
 		type: 'GET',
 		datatype: 'json',
 		async: true,
-		url:'http://www.omdbapi.com/?apikey=df308db8&t='+param,
+		url:'https://www.omdbapi.com/?apikey=df308db8&t='+param,
 
 		success: (response) =>{
 
